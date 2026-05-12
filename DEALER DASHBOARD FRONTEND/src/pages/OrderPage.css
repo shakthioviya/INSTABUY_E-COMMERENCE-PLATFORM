@@ -1,0 +1,46 @@
+.trend-up{
+font-weight:600;
+color:#2d7a4a;
+}
+
+.insights-card{
+margin-top:24px;
+padding-bottom:28px;
+}
+
+.rec-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+padding:0 24px 24px;
+}
+
+.rec-box{
+background:var(--amber-bg);
+border:1px solid var(--border);
+padding:18px;
+border-radius:14px;
+font-weight:500;
+transition:.25s;
+box-shadow:0 2px 8px rgba(0,0,0,.04);
+}
+
+.rec-box:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 24px rgba(200,129,58,.16);
+}
+
+.db-card{
+animation:fadeCard .5s ease;
+}
+
+@keyframes fadeCard{
+from{
+opacity:0;
+transform:translateY(18px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
